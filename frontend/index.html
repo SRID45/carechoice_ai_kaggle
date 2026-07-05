@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CareChoice AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CareChoice AI</h1>
+    <p>Smart Healthcare Plan Agent</p>
+  </header>
+
+  <div class="container">
+    <form id="careForm">
+      <label>Age:</label><input type="number" id="age" required>
+      <label>Income:</label><input type="number" id="income" required>
+      <label>Health Conditions:</label><input type="text" id="conditions" placeholder="e.g. diabetes, asthma">
+      <label>Preferred Provider:</label>
+      <select id="provider">
+        <option>Kaiser Permanente</option>
+        <option>Anthem Blue Cross</option>
+        <option>Medi-Cal</option>
+      </select>
+      <button type="submit">Get Recommendation</button>
+      <button type="button" id="clearBtn">Clear</button>
+    </form>
+
+    <div id="result" style="display:none; margin-top: 30px;">
+      
+      <div id="agentTrace" style="background: #eef7ff; padding: 15px; border-left: 4px solid #0077cc; margin-bottom: 20px; border-radius: 4px;">
+        <strong style="color: #0077cc;">🤖 Agent Thought Process Trace:</strong>
+        <p id="thoughtText" style="margin: 5px 0 0 0; font-style: italic; color: #555; font-size: 14px;"></p>
+      </div>
+
+      <h2>Top Selection Recommendation</h2>
+      <div id="topPlan"></div>
+
+      <h2 style="margin-top: 25px;">All Eligible Plans Evaluated</h2>
+      <div id="allPlansList"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
