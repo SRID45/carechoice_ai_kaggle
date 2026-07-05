@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; background: #f4f9ff; margin: 0; }
+header { background: #0077cc; color: white; padding: 20px; text-align: center; }
+.container { max-width: 800px; margin: 30px auto; background: white; padding: 20px; border-radius: 8px; }
+button { margin-top: 20px; padding: 10px 20px; background: #0077cc; color: white; border: none; border-radius: 4px; cursor: pointer; }
+button:hover { background: #005fa3; }
+.plan-card { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 15px; margin-bottom: 15px; }
+.plan-card h3 { margin: 0; color: #0077cc; }
