@@ -1,7 +1,4 @@
-Step 1: Copy the Markdown Content
-Click the "Copy" button on the top-right corner of the code block below.
 
-Markdown
 # CareChoice AI: Smart Healthcare Plan Agent
 
 ## Overview
